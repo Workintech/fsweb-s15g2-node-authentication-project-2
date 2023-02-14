@@ -1,0 +1,33 @@
+{
+  "name": "fsweb-s15g2-node-authentication-project-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.15.0",
+    "jest": "^28.1.0",
+    "jwt-decode": "^3.1.2",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "knex": "^2.0.0",
+    "sqlite3": "^5.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Workintech/fsweb-s15g2-node-authentication-project-2.git"
+  }
+}
