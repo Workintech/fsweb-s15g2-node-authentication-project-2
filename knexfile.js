@@ -1,14 +1,15 @@
-// DO NOT CHANGE THIS FILE
+// DEĞİŞİKLİK YAPMAYIN
 const sharedConfig = {
   client: 'sqlite3',
-  useNullAsDefault: true,
   migrations: {
     directory: './data/migrations',
   },
   seeds: {
     directory: './data/seeds',
   },
-  // this enables foreign keys in SQLite
+   // SQLite için aşağıdaki satırları ekliyoruz
+  useNullAsDefault: true,
+  // aşağıdaki satır foreign keys'i SQLite'da aktifleştirir
   pool: {
     afterCreate: (conn, done) => {
       conn.run('PRAGMA foreign_keys = ON', done)
