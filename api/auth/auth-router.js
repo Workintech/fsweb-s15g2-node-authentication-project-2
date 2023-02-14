@@ -24,7 +24,7 @@ router.post("/login", usernameVarmi, (req, res, next) => {
     response:
     status: 200
     {
-      "mesaj": "sue geri geldi!",
+      "message": "sue geri geldi!",
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ETC.ETC"
     }
 
