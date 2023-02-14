@@ -18,7 +18,7 @@ const { sinirli, sadece } = require("../auth/auth-middleware.js");
   ]
  */
 router.get("/", sinirli, (req, res, next) => { // hazır
-  Users.find()
+  Users.bul()
     .then(users => {
       res.json(users);
     })
@@ -41,7 +41,7 @@ router.get("/", sinirli, (req, res, next) => { // hazır
   ]
  */
 router.get("/:user_id", sinirli, sadece('admin'), (req, res, next) => { // hazır
-  Users.findById(req.params.user_id)
+  Users.idyeGoreBul(req.params.user_id)
     .then(user => {
       res.json(user);
     })
