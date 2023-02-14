@@ -46,7 +46,7 @@ const usernameVarmi = (req, res, next) => {
 
 const rolAdiGecerlimi = (req, res, next) => {
   /*
-    Bodydeki rol_name geçerliyse, req.role_name öğesini trimleyin ve devam edin.
+    Bodydeki role_name geçerliyse, req.role_name öğesini trimleyin ve devam edin.
 
     Req.body'de role_name eksikse veya trimden sonra sadece boş bir string kaldıysa,
     req.role_name öğesini "student" olarak ayarlayın ve isteğin devam etmesine izin verin.
