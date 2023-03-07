@@ -18,18 +18,18 @@ Aşağıdaki görevleri tamamlamak ve uygulamanın tüm testleri geçmesi için 
 
 Erişim fonksiyonlarını `api/users/users-model.js` dosyasına yazacaksınız:
 
-- [ ] `bul`
-- [ ] `goreBul`
-- [ ] `idyeGoreBul`
+- [x] `bul`
+- [x] `goreBul`
+- [x] `idyeGoreBul`
 
 #### 2B - Middleware Fonksiyonları
 
 Auth middlewarelarını `api/auth/auth-middleware.js` dosyasına yazacaksınız:
 
-- [ ] `sinirli`
-- [ ] `sadece`
-- [ ] `usernameVarmi`
-- [ ] `rolAdiGecerlimi`
+- [x] `sinirli`
+- [x] `sadece`
+- [x] `usernameVarmi`
+- [x] `rolAdiGecerlimi`
 
 #### 2C - Uçnoktalar
 
@@ -37,13 +37,13 @@ Kimlik doğrulama, JSON Web Tokenler kullanılarak uygulanacaktır.
 
 Aşağıdaki uçnoktaları `api/auth/auth-router.js` dosyasına yazın:
 
-- [ ] `[POST] /api/auth/register`
-- [ ] `[POST] /api/auth/login`
+- [x] `[POST] /api/auth/register`
+- [x] `[POST] /api/auth/login`
 
 `api/users/users-router.js` içindeki uçnoktalar hazır ama yine de bir göz atın:
 
-- [ ] `[GET] /api/users` - sadece geçerli tokena sahip olan kullanıcılar erişebilir
-- [ ] `[GET] /api/users/:user_id` - sadece geçerli tokena sahip olan kullanıcılar ve rolü admin olan kullanıcılar erişebilir
+- [x] `[GET] /api/users` - sadece geçerli tokena sahip olan kullanıcılar erişebilir
+- [x] `[GET] /api/users/:user_id` - sadece geçerli tokena sahip olan kullanıcılar ve rolü admin olan kullanıcılar erişebilir
 
 #### 2D - Secret Dosyaları
 

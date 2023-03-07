@@ -6,6 +6,7 @@
   Eğer bunları sağlamazsanız Testler geçmez ve diğer yazılımcılar bu repoyu klonladıklarında
   projeyi beklendiği gibi çalıştıramazlar.
  */
-module.exports = {
 
-}
+module.exports = {
+  JWT_SECRET: process.env.JWT_SECRET || "shh",
+};
