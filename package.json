@@ -7,7 +7,9 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand"
+    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
+    "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "sendresults": "node sendTestResults.js"
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
@@ -16,7 +18,8 @@
     "jest": "^28.1.0",
     "jwt-decode": "^3.1.2",
     "nodemon": "^2.0.16",
-    "supertest": "^6.2.3"
+    "supertest": "^6.2.3",
+    "jest-ctrf-json-reporter": "^0.0.9"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

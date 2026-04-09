@@ -67,7 +67,9 @@ Aşağıdaki uçnoktaları `api/auth/auth-router.js` dosyasına yazın:
 
 #### Notlar
 
-- Testler için `npm test`.
+- Testleri çalıştırmadan önce proje dizinindeki `user.json` dosyasını bulun ve `user_id` alanını NextGen proje ekranında görünen kendi `user_id` değeriniz ile güncelleyin.
+- Otomatik testleri çalıştırmak için `npm test` komutunu kullanın.
+- Test skorlarını NextGen'e `npm run sendresults` komutu ile kaydedin.
 - Proje `migrate`, `rollback` ve `seed` scriptleriyle beraber gelmektedir. veritabanını resetleyebilirsiniz.
 - Ek dosyalar oluşturabilirsiniz ancak **mevcut dosyaları veya klasörleri taşımayın veya yeniden adlandırmayın**.
 - Fazladan kitaplıklar kurmak veya fazladan betik eklemek dışında `package.json` dosyanızı değiştirmeyin. Mevcut kitaplıkları güncellemeyin.
